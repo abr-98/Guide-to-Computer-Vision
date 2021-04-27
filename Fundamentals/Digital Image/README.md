@@ -30,6 +30,13 @@ For 1D signal, we just needed to drop some 1D lines on the signals, to discretiz
 
 As it can be seen in the above diagram, the same image has been discretized in two different manner. In the 1st image pixel density (unit: Pixel per inch) is much lower than the 2nd one. The amplitude recorded at the value of sampling spans over the full representing 2D pixel grid. As a result, the second image captures much more distinct and large number of pixel values than the first image. The first image provides much more of a blocky effect due to the reason we saw in the 1D case, and has a lower resolution and hence a lower clarity.
 
+### 3. Quantization of Pixel Values:
+
+As we have already seen, image to be a constant 2D signal, it ranges over all Natural Numbers including decimal values. If we have to store decimal values, we need a large number of bits to save the amplitude of even one of the sampling points. For example, if the value of the signal is 78.93 at one point, it will take up a high number of bits, So, we use the concept of quantization.
+
+![Quantization](https://www.tutorialspoint.com/digital_communication/images/quantization.jpg)
+
+The above image describes quantization of image signal, as we can see any signal value in the range of (a,b), is replaced by value a or value b depending on quantization policy. Now, in this image the axes represents number from 0-16 in binary. In image cases we create divisions from 0 to 255, total of 256 levels of quantizations, So, if we get a pixel value of 78.93 it is mapped as 78, which can be represented as a 8 bit number. So, for representing any pixel value we need 8 bits. The error generated due to quantization is called **quantization error**. More the number of levels, less is the quantization error, more is the memory required. It has been observed that, the quantization error effect is not significant if we use 256 levels of quantization. So, it has been adapted as standard,and the highest value of any pixel is 255. 
 
 
 
