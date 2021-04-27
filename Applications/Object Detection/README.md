@@ -1,0 +1,1 @@
+Object Detection deals with the combination of classification and localization. Most of the time, in an image frame, there are multiple objects present. We expect the computer to label each object found in the image separately and mark their localities.
