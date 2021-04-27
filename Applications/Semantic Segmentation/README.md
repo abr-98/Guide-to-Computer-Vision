@@ -1,0 +1,1 @@
+Semantic Segmentation is the reason behind the emergence of computer vision in the biomedical imaging fields. In these cases, the computer labels the image in a set of classes. In simplest circumstances, there are two classes, the target class, and the background.
