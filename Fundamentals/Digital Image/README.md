@@ -20,3 +20,18 @@ We saw the above example on a 1D data, but for storing an image we perform this 
 
 This whole process is called spatial discretization.
 
+### 2. Controlling Resolution: 
+
+Resolution is the measure of the number of pixel values, more the number of pixel points, more is the resolution. We have discussed in the spatial discretization portion, we sample the continous signal all along the 2D space, Now, if look very closely at (c) figure, we will see, that the signal values between the two sampling points are constants, and so looks a bit blockish.
+
+For 1D signal, we just needed to drop some 1D lines on the signals, to discretize it. For 2D image signals we distribute the image into small grids, at the centre of the grid is the sampling point, and the whole grid represent the pixels.
+
+![Resolution](https://www.scientiamobile.com/wp-content/uploads/2018/12/Pixel-Density.jpg)
+
+As it can be seen in the above diagram, the same image has been discretized in two different manner. In the 1st image pixel density (unit: Pixel per inch) is much lower than the 2nd one. The amplitude recorded at the value of sampling spans over the full representing 2D pixel grid. As a result, the second image captures much more distinct and large number of pixel values than the first image. The first image provides much more of a blocky effect due to the reason we saw in the 1D case, and has a lower resolution and hence a lower clarity.
+
+
+
+
+
+
