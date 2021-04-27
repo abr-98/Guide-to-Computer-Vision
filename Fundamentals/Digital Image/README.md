@@ -16,6 +16,7 @@ It is impossible to store such a continous 2D signal so, we adapt a few techniqu
 
 As shown in the above figure, (a), we hava a continous signal, which we can't store. So, we sample the continous signal at some points as shown in (b), to obtain some discrete velues, such that for a particular (x) we have the value of the function f(x) represented by the curve. (c) gives the signal which can be reconstructed from the sampled signals. But for the reconstruction to be possible the sampling frequency must be >= 2 the bandwidth of the original signal. This is called **Nyquist Sampling Theory**. The method is called discretization. 
 
-We saw the above example on a 1D data, but for storing an image we perform this operation on a 2D spatial data, and obtain discrete values all over the image plane (x,y), which represents the value of the function f(x,y) that represents that particular image signal.
+We saw the above example on a 1D data, but for storing an image we perform this operation on a 2D spatial data, and obtain discrete values all over the image plane (x,y), which represents the value of the function f(x,y) that represents that particular image signal. The values depict the amplitude of the signal at that point (x,y). The points of sampling all over the plane of the image are known as **Pixel Points**
 
 This whole process is called spatial discretization.
+
