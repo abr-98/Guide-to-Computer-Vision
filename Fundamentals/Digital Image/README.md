@@ -38,6 +38,13 @@ As we have already seen, image to be a constant 2D signal, it ranges over all Na
 
 The above image describes quantization of image signal, as we can see any signal value in the range of (a,b), is replaced by value a or value b depending on quantization policy. Now, in this image the axes represents number from 0-16 in binary. In image cases we create divisions from 0 to 255, total of 256 levels of quantizations, So, if we get a pixel value of 78.93 it is mapped as 78, which can be represented as a 8 bit number. So, for representing any pixel value we need 8 bits. The error generated due to quantization is called **quantization error**. More the number of levels, less is the quantization error, more is the memory required. It has been observed that, the quantization error effect is not significant if we use 256 levels of quantization. So, it has been adapted as standard,and the highest value of any pixel is 255. 
 
+### 4. Channels of an Image
+
+As we have seen in the Quantization portion, the pixel value varies from 0-255, and value represents the intensity of the pixel. If we consider a colour say white, 0-255 each value gives a different intensity of white, 0 being black and 255 being white, so we get a complete shade palette. Again, if we see another colour say red, each value from 0-255 gives a different shade of red. As we know, a every colour is a combination of some primary colours in case of images also, this theory holds. 
+
+![Channel](https://miro.medium.com/max/311/1*uMda2KGCQFb6sZm8Cli7tA.png)
+
+If you see the upper image, the first colour image is created by the super position of the other 3 images in primary colours Red, Blue and Green, pixel by pixel. So, the image is said to have 3 channels: Red, Blue and Green (RGB). These 3 channels are also present in diigital cameras. Grayscale images have only 1 channel, while RGB images of 3 channels. So, for saving an RGB image, we need 24 bits for each pixel, 8 bit per pixel for each channel.
 
 
 
