@@ -56,7 +56,7 @@ It is a simple technique to improve the contrast of an image and enhance it. It 
 
 ![Equalization](https://repository-images.githubusercontent.com/196091044/195dce80-a2b1-11e9-8028-f8688944258f)
 
-Histogram equilization spreads the pixel values over the range as shown in the above diagram, increasing the image contrast, by creating an equal probable distribution for all the pixel values to occur. The process can be achieved using opencv, easily as shown in the fourth module file. 
+Histogram equilization spreads the pixel values over the range as shown in the above diagram, increasing the image contrast, by creating an equal probable distribution for all the pixel values to occur. The process can be achieved using opencv, easily as shown in the fourth module pynb file. 
 
 
 
