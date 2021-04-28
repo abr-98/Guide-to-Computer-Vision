@@ -50,7 +50,13 @@ This enhancement technique is given by:
 
 Here gamma is the exponential parameter, that gives a number of variants based on its value. C is the constant.
 
+### 7. Histogram Equalization:
 
+It is a simple technique to improve the contrast of an image and enhance it. It is often seen that, in images pixel values get confined in a particular range, for example, for bright images, the pixel  values are mostly confined to higher value region. This results in a low contrast image.
+
+![Equalization](https://opencv-python-tutroals.readthedocs.io/en/latest/_images/histogram_equalization.png)
+
+Histogram equilization spreads the pixel values over the range as shown in the above diagram, increasing the image contrast, by creating an equal probable distribution for all the pixel values to occur. The process can be achieved using opencv, easily as shown in the fourth module file. 
 
 
 
