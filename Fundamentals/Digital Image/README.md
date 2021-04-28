@@ -44,7 +44,7 @@ As we have seen in the Quantization portion, the pixel value varies from 0-255, 
 
 ![Channel](https://miro.medium.com/max/311/1*uMda2KGCQFb6sZm8Cli7tA.png)
 
-If you see the upper image, the first colour image is created by the super position of the other 3 images in primary colours Red, Blue and Green, pixel by pixel. So, the image is said to have 3 channels: Red, Blue and Green (RGB). These 3 channels are also present in diigital cameras. Grayscale images have only 1 channel, while RGB images of 3 channels. So, for saving an RGB image, we need 24 bits for each pixel, 8 bit per pixel for each channel.
+If you see the upper image, the first colour image is created by the super position of the other 3 images in primary colours Red, Blue and Green, pixel by pixel. So, the image is said to have 3 channels: Red, Blue and Green (RGB). These 3 channels are also present in diigital cameras. Grayscale images have only 1 channel, while RGB images of 3 channels. So, for saving an RGB image, we need 24 bits for each pixel, 8 bit per pixel for a channel each.
 
 
 
