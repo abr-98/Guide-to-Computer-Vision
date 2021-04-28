@@ -8,7 +8,7 @@ where X is the original pixel value and Y is the new pixel value after transform
 
 ### 1. Inversion
 
-This operator converts the image into its  negative or inverse image, as shown in the image_negative.ipynb file. The transformation formulates as below:
+This operator converts the image into its  negative or inverse image, as shown in the image_transformation_1.ipynb file. The transformation formulates as below:
 
 **Y= (max_pixel_value-1) - X**
 
@@ -16,7 +16,7 @@ It is a completely linear transformation.
 
 ### 2. Image Thresholding
 
-The operator make all the pixel values above a particular threshold equal to the maximum value and all the pixel values below a particular threshold equal to the minimum value. Its working has been shown un the image_threshold_and_stretching.ipynb file
+The operator make all the pixel values above a particular threshold equal to the maximum value and all the pixel values below a particular threshold equal to the minimum value. Its working has been shown in the image_transformation_2.ipynb file
 
 ### 3. Context-Stretching:
 
@@ -31,6 +31,27 @@ It is achieved by the equation:
 where P_old is the given image, and max(P_old) depicts the highest pixel value.
 
 ##### Percentile Stretching
+
+### 4. Grayscale slicing:
+
+The operator make all the pixel values above a particular threshold equal to the maximum value and all other pixel values remain intact. Its working has been shown in the image_transformation_3.ipynb file
+
+### 5. Logarithmic Stretching:
+
+This enhancement technique is used a lot in FFTs. It is given by:
+
+**Y= C.log(1+x)**, where C is a constant
+
+### 6. Power-law transform:
+
+This enhancement technique is given by:
+
+**Y= C.(X+*lambda*)^*gamma***
+
+Here gamma is the exponential parameter, that gives a number of variants based on its value. C is the constant.
+
+
+
 
 
 
