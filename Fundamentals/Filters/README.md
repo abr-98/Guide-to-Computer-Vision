@@ -14,4 +14,30 @@ The filter slides over the entire image, and how the masks slides is controlled 
 
 Filters are normally used for image smoothing, sharpenining and edge enhancements. Filters can be present in both spatial and frequency domains. We are going to talk about the spatial domain filtering.
 
+### 1. Smoothening or Blurring Filters:
+
+They smoothen out or blur the image upto some extent to reduce Noise. There are Linear and Non-Linear Smoothening operators. 
+
+##### Smoothening Linear Filters:
+
+**Mean Blur Kernel:** The response of this filter is just the mean value of the pixels in the neighbourhood of the pixel of interest, covered by the kernel.
+
+![Mean](https://miro.medium.com/max/187/1*wJfPULU0I_OnskXTkWjqkA.gif)
+
+**Weighted Average Kernel:** The response of this kernel is similar to the Mean Blur kernel except the fact that this kernel takes the wieghted average of the neighbours. 
+
+![Weighted](https://miro.medium.com/max/432/1*rnHldrVN7DAqGX6fe_2IGQ.png)
+
+**Guassian Average Kernel:** Gaussian kernel is also another weighted mean blur kernel, whose weights follow the bell shaped curve Gaussian distribution. 
+
+![Gaussian](https://miro.medium.com/max/526/1*CHbVU4ykR7yWS3nd2ayrwg.png)
+
+The kernel distributions and weights can be varied using the mean ad the standard deviation according to requirements as shown in the implementations.
+
+##### Smoothening Non Linear Filters:
+
+The non-linear filters mostly consists of three types of filters, the MIN, MAX and the MEDIAN filters, which are used for smootheining. Accordingly, as their name suggests, the filters return the Maximum, Minimum and Median values of the pixel values covered by the filters over the image.
+
+
+
 
