@@ -39,5 +39,20 @@ The kernel distributions and weights can be varied using the mean ad the standar
 The non-linear filters mostly consists of three types of filters, the MIN, MAX and the MEDIAN filters, which are used for smootheining. Accordingly, as their name suggests, the filters return the Maximum, Minimum and Median values of the pixel values covered by the filters over the image.
 
 
+### 2. Sharpening Filters: 
+
+Such filters are used to increase the internsity of the edges and detect them.
+
+**Laplacian Filter**: THese filters are created usese the double derivative on the increasing or decreasing flow of the pixel values of the image in both vertical and horizontal directions. There are two types of laplacian operators:
+
+1. Without Considering Diagonals: Using 4-Neighbours.
+2. Considering Diagonals: Using 8-Neighbours.
+
+![Laplacian](https://www.researchgate.net/profile/Siti-Yasiran/publication/261459927/figure/fig1/AS:650032764170264@1531991296526/Two-commonly-used-discrete-approximations-to-the-Laplacian-filter.png)
+
+**Sobel Filters** They are used for outlining edges, with the help of gradient of the movement of pixel values in an image to enhance edges. There are two sobel operators: For Vertical and for Horizontal Edge detections.
+
+![Sobel](https://miro.medium.com/max/2400/1*djX8CkhUJZYu9ndKyz5ApA.jpeg)
+
 
 
