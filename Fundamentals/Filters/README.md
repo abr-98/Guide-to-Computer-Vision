@@ -11,3 +11,7 @@ Each filter has a response, which becomes the updated value of the pixel of inte
 **Response= f(x-1,y-1).w(-1,-1) + f(x-1,y).w(-1,0) + f(x-1,y+1).w(-1,1) + f(x,y-1).w(0,-1) + f(x,y).w(0,0) + f(x,y+1).w(0,1) + f(x+1,y-1).w(1,-1) + f(x+1,y).w(1,0) + f(x+1,y+1).w(1,1)**
 
 The filter slides over the entire image, and how the masks slides is controlled by a measure called **Stride**.
+
+Filters are normally used for image smoothing, sharpenining and edge enhancements. Filters can be present in both spatial and frequency domains. We are going to talk about the spatial domain filtering.
+
+
