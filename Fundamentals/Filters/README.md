@@ -22,7 +22,7 @@ They smoothen out or blur the image upto some extent to reduce Noise. There are 
 
 **Mean Blur Kernel:** The response of this filter is just the mean value of the pixels in the neighbourhood of the pixel of interest, covered by the kernel.
 
-![Mean](https://miro.medium.com/max/187/1*wJfPULU0I_OnskXTkWjqkA.gif)
+![Mean](https://3.bp.blogspot.com/-z1EIsBG_8hA/U6KlbsJoBMI/AAAAAAAABdQ/jgThabZzWDM/s1600/avg.PNG)
 
 **Weighted Average Kernel:** The response of this kernel is similar to the Mean Blur kernel except the fact that this kernel takes the wieghted average of the neighbours. 
 
