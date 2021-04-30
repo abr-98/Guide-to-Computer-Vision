@@ -26,3 +26,15 @@ It is given by:
 ![form1](https://i0.wp.com/theailearner.com/wp-content/uploads/2019/05/log1.png?resize=211%2C49&ssl=1)
 ![form2](https://i2.wp.com/theailearner.com/wp-content/uploads/2019/05/Lapeq.png?w=610&ssl=1)
 
+**3. Canny Edge Detector:** The canny edge detector is the most used edge detector of current times. The Canny edge detector works in four different steps:
+1. Noise Removal: Like LoG, Canny Edge detector also uses a guassian filter mask to remove the noise from the image.
+2. Gradient Computation: It calculates the gradient or the rate of change of intensity of pixels moving along the axes of the image.
+3. Extract edges using Non-max supressions: Canny edge detector slides a kernel of size 3x3 over the image plane after calculating the gradients and tries to locate the local maxima, which are the edges detected
+4. Hysteresis thresholding: Canny Edge detectors use a two threshold system, with an upper and a lower threshold, which just define a range of intensity. Its often seen that, noises are still not removed. So, canny detectors allows to set an intensity range within which the actual edge intensities should lie.
+
+Refernces:
+1. cse.usf.edu/~r1k/MachineVisionBook/MachineVision.files/MachineVision_Chapter5.pdf
+2. https://medium.com/analytics-vidhya/a-beginners-guide-to-computer-vision-part-2-edge-detection-4f10777d5483
+3. https://theailearner.com/2019/05/25/laplacian-of-gaussian-log/
+4. https://ai.plainenglish.io/a-dive-into-canny-edge-detection-using-opencv-python-76326c2fa19c
+
