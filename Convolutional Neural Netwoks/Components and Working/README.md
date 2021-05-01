@@ -65,3 +65,11 @@ These layers are artificial neural network nodes, which learn from the obtained 
 ### 7. Activation Layers:
 
 Activation layers are the units of non-linearity in the convolutional networks, which stack up to create polynomial functions to help the network learn complex functions. Most used Activation functions is "Relu" for CNNs.
+
+
+References:
+
+1. https://medium.com/swlh/computer-vision-and-role-of-convolutional-neural-networks-explanations-and-working-8791b18b8c85
+2. https://cs231n.github.io/convolutional-networks/
+3. https://medium.com/technologymadeeasy/the-best-explanation-of-convolutional-neural-networks-on-the-internet-fbb8b1ad5df8
+4. https://towardsdatascience.com/batch-normalisation-in-deep-neural-network-ce65dd9e8dbf
