@@ -12,10 +12,12 @@ Here we can see that the X is rotated and as a result its array substructure cha
 
 ![CNN2](https://miro.medium.com/max/700/0*UJ-jwmPEKbVIFUZQ)
 
-We can see the patterns in the boxes match each other. So the computer can also judge these similarities and based on these it decides the answer to the basic question. These patterns are extracted by the computer as features of an image. Later, the computer tries to find these features in a new image it receives. If the same features are found in the new images it is classified as the target class else not, or if a part of the new image carries similar features as experienced in the training set, it is detected as an object. 
+We can see the patterns in the boxes match each other. So the computer can also judge these similarities and based on these it decides the answer to the basic question. These patterns are extracted by the computer as features of an image. Later, the computer tries to find these features in a new image it receives. If the same features are found in the new images it is classified as the target class else not, or if a part of the new image carries similar features as experienced in the training set, it is detected as an object.  This is the basic idea behind convlutional Neural Networks.
 
 ### Convolution
 
 Convolution is a mathematical operation on two functions (f and g) that produces a third function expressing how the shape of one is modified by others. A second function g(t) is passed over a function f(t). The product of the two functions at a point t is found and the values are integrated to devise the third function. It is given by:
 
 ![formula](https://miro.medium.com/max/700/0*T_LEg6WuJ1t5AuXR)
+
+Reference: https://en.wikipedia.org/wiki/Convolution#:~:text=In%20mathematics%20(in%20particular%2C%20functional,the%20process%20of%20computing%20it.
