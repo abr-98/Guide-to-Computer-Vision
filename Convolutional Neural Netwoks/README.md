@@ -21,3 +21,8 @@ Convolution is a mathematical operation on two functions (f and g) that produces
 ![formula](https://miro.medium.com/max/700/0*T_LEg6WuJ1t5AuXR)
 
 Reference: https://en.wikipedia.org/wiki/Convolution#:~:text=In%20mathematics%20(in%20particular%2C%20functional,the%20process%20of%20computing%20it.
+
+
+![Structure](https://miro.medium.com/max/633/0*eRW5zbWkQM29Z6g7)
+
+The above image describes the basic structure of a convolutional neural networks. It constitutes of an input layer and an output layer and a number of hidden layers, which is dependent on the required complexity of the network according to the designer, in order to find and learn features from image data.
