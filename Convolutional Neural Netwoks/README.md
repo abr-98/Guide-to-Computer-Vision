@@ -18,4 +18,4 @@ We can see the patterns in the boxes match each other. So the computer can also 
 
 Convolution is a mathematical operation on two functions (f and g) that produces a third function expressing how the shape of one is modified by others. A second function g(t) is passed over a function f(t). The product of the two functions at a point t is found and the values are integrated to devise the third function. It is given by:
 
-![formula]
+![formula](https://miro.medium.com/max/700/0*T_LEg6WuJ1t5AuXR)
