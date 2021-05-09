@@ -31,16 +31,14 @@ Inception V3 brought some changes as compared to inception v2 as it introducedm 
 There has been other models like inception v4 and Inception-Resnet which are currently being used as State-of-Art architecture.
 
 References:
+
 1.https://arxiv.org/pdf/1409.4842.pdf
-
-3.https://arxiv.org/pdf/1512.00567v3.pdf
-
-5.https://arxiv.org/pdf/1602.07261.pdf
-
-7.https://www.geeksforgeeks.org/ml-inception-network-v1/
-8.https://www.geeksforgeeks.org/inception-v2-and-v3-inception-network-versions/
-9.https://medium.com/analytics-vidhya/inception-network-and-its-derivatives-e31b14388bf9
-10.https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202
+2.https://arxiv.org/pdf/1512.00567v3.pdf
+3.https://arxiv.org/pdf/1602.07261.pdf
+4.https://www.geeksforgeeks.org/ml-inception-network-v1/
+5.https://www.geeksforgeeks.org/inception-v2-and-v3-inception-network-versions/
+6.https://medium.com/analytics-vidhya/inception-network-and-its-derivatives-e31b14388bf9
+7.https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202
 
 
 
