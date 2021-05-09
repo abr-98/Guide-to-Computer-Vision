@@ -38,6 +38,9 @@ In deep learning, we use **inductive based transfer learning**. The deep transfe
 
 2. Fine Tuning Off-the-shelf Pre-trained Models: In this case, we replace the final layers with new layers based on the task at hand. We also train the last few layers of the network, in order to obtain finer work. It is due to the fact that the initial layers extract the more generic features, while the deeper layers are more task specific.
 
+The available models for transfer learning in computer vision.
+![types](https://www.educative.io/api/edpresso/shot/4574405643468800/image/4521173214822400)
+
 References:
 
 1. https://towardsdatascience.com/a-comprehensive-hands-on-guide-to-transfer-learning-with-real-world-applications-in-deep-learning-212bf3b2f27a
