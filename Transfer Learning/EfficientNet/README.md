@@ -43,12 +43,12 @@ The above architecture was proposed as the basic base architecture. The MBConv b
 
 The above image represents the MBConv module.
 
-References:
+References: \
 1.https://arxiv.org/pdf/1905.11946.pdf\\ \
 3.https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html \
 4.https://amaarora.github.io/2020/08/13/efficientnet.html \
 5.https://medium.com/@nainaakash012/efficientnet-rethinking-model-scaling-for-convolutional-neural-networks-92941c5bfb95 \
-6.https://arxiv.org/abs/1801.04381 \
+6.https://arxiv.org/abs/1801.04381 
 
 
 
