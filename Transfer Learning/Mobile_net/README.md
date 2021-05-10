@@ -47,11 +47,11 @@ The V2 module brought 1 major change, that is the last layer of the block is a 1
 
 The V2 model gave a much higher performances compared to other models. 
 
-References:  \n
+References:  
 
-1. https://arxiv.org/pdf/1704.04861.pdf   \n
-2. https://arxiv.org/pdf/1801.04381.pdf   \n
-3. https://ai.googleblog.com/2018/04/mobilenetv2-next-generation-of-on.html \n
+1. https://arxiv.org/pdf/1704.04861.pdf   
+2. https://arxiv.org/pdf/1801.04381.pdf   
+3. https://ai.googleblog.com/2018/04/mobilenetv2-next-generation-of-on.html
 4. https://towardsdatascience.com/review-mobilenetv1-depthwise-separable-convolution-light-weight-model-a382df364b69
 5. https://towardsdatascience.com/review-mobilenetv2-light-weight-model-image-classification-8febb490e61c
 6. https://analyticsindiamag.com/why-googles-mobilenetv2-is-a-revolutionary-next-gen-on-device-computer-vision-network/
