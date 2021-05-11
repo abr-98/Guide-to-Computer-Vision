@@ -47,3 +47,5 @@ References:
 2. https://ruder.io/transfer-learning/
 3. https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf
 4. https://www.analyticsvidhya.com/blog/2017/06/transfer-learning-the-art-of-fine-tuning-a-pre-trained-model/
+
+Examples: solved on cats-vs-dogs dataset.
