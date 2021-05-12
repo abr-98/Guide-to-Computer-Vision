@@ -87,4 +87,4 @@ val_set=ImageDataGenerator(preprocessing_function=preprocess_input)
 ~~~
 
 
-
+*For GPU, its better to keep the batch_size bigger*
