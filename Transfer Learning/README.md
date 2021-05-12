@@ -59,8 +59,8 @@ So, often passing the raw image data using custom preprocessing won't yield bett
 For example, we can find the preprocess unit of the resnet at https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet/preprocess_input.
 
 We can use the preprocessing function seperately, manually as 
-'''
-from keras.applications.resnet50 import ResNet50
+
+~~~from keras.applications.resnet50 import ResNet50
 from keras.preprocessing import image
 from keras.applications.resnet50 import preprocess_input
 import numpy as np
@@ -70,7 +70,8 @@ model = ResNet50(weights='imagenet')
 img_path = 'elephant.jpg'
 img = image.load_img(img_path, target_size=(224, 224))
 x = image.img_to_array(img)
-x = preprocess_input(x)
-'''
+x = preprocess_input(x)~~~
+
+
 
 
