@@ -49,3 +49,28 @@ References:
 4. https://www.analyticsvidhya.com/blog/2017/06/transfer-learning-the-art-of-fine-tuning-a-pre-trained-model/
 
 Examples: solved on cats-vs-dogs dataset.
+
+**One important point to remember about training model using transfer learning is:**
+
+When the models were initially trained for the imagenet datasets, the authors made some preprocessing to the data, that rescaled the images and shifted the pixel values to a certain amount to obtain the best results. So, when we load the "imagenet" weights, the filter weights are tuned to work, after the image is passsed through the same preprocessing units. 
+
+So, often passing the raw image data using custom preprocessing won't yield better results, and as the models are bulky, it takes huge time and data to train the model parameters with respect to the new custom preprocessing. To deal with these problems, Tensorflow provides the preprocess_input functions, for every transfer learning model, as shown in v3 of the shown examples above.
+
+For example, we can find the preprocess unit of the resnet at https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet/preprocess_input.
+
+We can use the preprocessing function seperately, manually as 
+'''
+from keras.applications.resnet50 import ResNet50
+from keras.preprocessing import image
+from keras.applications.resnet50 import preprocess_input
+import numpy as np
+
+model = ResNet50(weights='imagenet')
+
+img_path = 'elephant.jpg'
+img = image.load_img(img_path, target_size=(224, 224))
+x = image.img_to_array(img)
+x = preprocess_input(x)
+'''
+
+
