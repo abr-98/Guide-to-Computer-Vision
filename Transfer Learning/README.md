@@ -70,8 +70,21 @@ model = ResNet50(weights='imagenet')
 img_path = 'elephant.jpg'
 img = image.load_img(img_path, target_size=(224, 224))
 x = image.img_to_array(img)
-x = preprocess_input(x)~~~
+x = preprocess_input(x)
+~~~
 
+Or we can deploy it using the ImageDataGenerator:
+
+~~~from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from keras.applications.resnet_v2 import preprocess_input
+train_set=ImageDataGenerator(
+    rotation_range=20,
+    zoom_range=0.1,
+    shear_range=0.2,
+    preprocessing_function=preprocess_input
+)
+val_set=ImageDataGenerator(preprocessing_function=preprocess_input)
+~~~
 
 
 
