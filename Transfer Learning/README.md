@@ -84,6 +84,8 @@ train_set=ImageDataGenerator(
     preprocessing_function=preprocess_input
 )
 val_set=ImageDataGenerator(preprocessing_function=preprocess_input)
+
+real_label=val_generator.classes  ##This gets the real labels of the data passed.
 ~~~
 
 
