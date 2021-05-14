@@ -55,9 +55,9 @@ References:
 3.https://link.springer.com/chapter/10.1007/11744023_32 /n
 
 Other most used Feature exractors are:
-BRIEF: https://docs.opencv.org/3.4/dc/d7d/tutorial_py_brief.html /n
-ORB: https://docs.opencv.org/3.4/d1/d89/tutorial_py_orb.html /n
-FAST: https://docs.opencv.org/3.4/df/d0c/tutorial_py_fast.html /n
+BRIEF: https://docs.opencv.org/3.4/dc/d7d/tutorial_py_brief.html \
+ORB: https://docs.opencv.org/3.4/d1/d89/tutorial_py_orb.html \
+FAST: https://docs.opencv.org/3.4/df/d0c/tutorial_py_fast.html \
 
 More Resources:
 
