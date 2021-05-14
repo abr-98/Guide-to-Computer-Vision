@@ -41,23 +41,23 @@ References:
 
 **3.SIFT: Scale Invariant Feature Transform:** In this method, we locate features called "keypoints" on the image, which are invariant to rotation, noise, scaling. Using the gradient magnitude and direction, at the keypoints we create unique footprints for the objects in the image. These footprints are used in case of object identification, matching and detection. In order to find the "keypoints", we use a guassian blur to remove noise, a scale space inorder to obtain the scale invariant points. Next, we use a Differnece of Gaussian (DOG) method to extract the points of interest. We then proceed to an orientation assignment operation, in order to check if the points are rotation invariant. Lastly, using the combination of values, we develop an unique fingerprint for every keypoint called the feature descriptor.
 
-References:
+References: 
 1. https://www.analyticsvidhya.com/blog/2019/10/detailed-guide-powerful-sift-technique-image-matching-python/
-2. https://docs.opencv.org/3.4/da/df5/tutorial_py_sift_intro.html /n
-3. https://link.springer.com/article/10.1023/B:VISI.0000029664.99615.94 /n
+2. https://docs.opencv.org/3.4/da/df5/tutorial_py_sift_intro.html \
+3. https://link.springer.com/article/10.1023/B:VISI.0000029664.99615.94 \
 
 
 **4. SURF: Speeded-Up Robust Feature:** It is a faster version of SIFT.
 
-References: 
-1.https://docs.opencv.org/3.4/df/dd2/tutorial_py_surf_intro.html \n
-2.https://medium.com/data-breach/introduction-to-surf-speeded-up-robust-features-c7396d6e7c4e /n
-3.https://link.springer.com/chapter/10.1007/11744023_32 /n
+References: \
+1.https://docs.opencv.org/3.4/df/dd2/tutorial_py_surf_intro.html \
+2.https://medium.com/data-breach/introduction-to-surf-speeded-up-robust-features-c7396d6e7c4e \
+3.https://link.springer.com/chapter/10.1007/11744023_32 \
 
-Other most used Feature exractors are:
+Other most used Feature exractors are: \
 BRIEF: https://docs.opencv.org/3.4/dc/d7d/tutorial_py_brief.html \
 ORB: https://docs.opencv.org/3.4/d1/d89/tutorial_py_orb.html \
-FAST: https://docs.opencv.org/3.4/df/d0c/tutorial_py_fast.html \
+FAST: https://docs.opencv.org/3.4/df/d0c/tutorial_py_fast.html 
 
 More Resources:
 
