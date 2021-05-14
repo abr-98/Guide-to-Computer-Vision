@@ -35,8 +35,8 @@ There are several filters to detect different features. They are majorly used fo
 
 References:
 
-1.https://github.com/opencv/opencv/tree/master/data/haarcascades  \n
-2.https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html  \n
+1.https://github.com/opencv/opencv/tree/master/data/haarcascades  /n
+2.https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html  /n
 3.https://www.pyimagesearch.com/2021/04/12/opencv-haar-cascades/   \n
 
 **3.SIFT: Scale Invariant Feature Transform:** In this method, we locate features called "keypoints" on the image, which are invariant to rotation, noise, scaling. Using the gradient magnitude and direction, at the keypoints we create unique footprints for the objects in the image. These footprints are used in case of object identification, matching and detection. In order to find the "keypoints", we use a guassian blur to remove noise, a scale space inorder to obtain the scale invariant points. Next, we use a Differnece of Gaussian (DOG) method to extract the points of interest. We then proceed to an orientation assignment operation, in order to check if the points are rotation invariant. Lastly, using the combination of values, we develop an unique fingerprint for every keypoint called the feature descriptor.
