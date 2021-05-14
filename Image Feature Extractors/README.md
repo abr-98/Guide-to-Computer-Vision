@@ -44,15 +44,15 @@ References:
 References: 
 1. https://www.analyticsvidhya.com/blog/2019/10/detailed-guide-powerful-sift-technique-image-matching-python/
 2. https://docs.opencv.org/3.4/da/df5/tutorial_py_sift_intro.html \
-3. https://link.springer.com/article/10.1023/B:VISI.0000029664.99615.94 \
+3. https://link.springer.com/article/10.1023/B:VISI.0000029664.99615.94 
 
 
 **4. SURF: Speeded-Up Robust Feature:** It is a faster version of SIFT.
 
-References: \
+References: 
 1.https://docs.opencv.org/3.4/df/dd2/tutorial_py_surf_intro.html \
 2.https://medium.com/data-breach/introduction-to-surf-speeded-up-robust-features-c7396d6e7c4e \
-3.https://link.springer.com/chapter/10.1007/11744023_32 \
+3.https://link.springer.com/chapter/10.1007/11744023_32 
 
 Other most used Feature exractors are: \
 BRIEF: https://docs.opencv.org/3.4/dc/d7d/tutorial_py_brief.html \
