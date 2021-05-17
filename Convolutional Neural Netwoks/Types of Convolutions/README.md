@@ -6,7 +6,7 @@ Based on dimensionality of applications, the convolutional layers, are divided i
 
 **1. 2-D Convolutional layers:** These filters work on 2D input images and extract the required feature map. The size of the feature maps to be extracted is given by:
 
-!{Normal](https://miro.medium.com/max/435/1*1okwhewf5KCtIPaFib4XaA.gif)
+![Normal](https://miro.medium.com/max/435/1*1okwhewf5KCtIPaFib4XaA.gif)
 
 Feature Map Size= ((Image Size - Filter size + 2* Padding) / Stride) + 1
 
