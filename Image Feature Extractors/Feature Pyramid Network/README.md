@@ -20,9 +20,9 @@ The bottom up layer help to extract the best semantic features, while the top do
 
 We extract features from all the levels of the top down limb in order to obtain multi scaled features. So, we obtain 4 seperate feature maps, one from each layer, which are flattened and passed into the fully connected layers for classification tasks.
 
-References: \
-1. https://arxiv.org/pdf/1612.03144.pdf  \
-2. https://medium.com/analytics-vidhya/a-beginners-guide-to-computer-vision-part-4-pyramid-3640edeffb00 \
-3. https://docs.opencv.org/3.4/d4/d1f/tutorial_pyramids.html \
-4. https://towardsdatascience.com/review-fpn-feature-pyramid-network-object-detection-262fc7482610 \
+References: 
+1. https://arxiv.org/pdf/1612.03144.pdf  
+2. https://medium.com/analytics-vidhya/a-beginners-guide-to-computer-vision-part-4-pyramid-3640edeffb00 
+3. https://docs.opencv.org/3.4/d4/d1f/tutorial_pyramids.html 
+4. https://towardsdatascience.com/review-fpn-feature-pyramid-network-object-detection-262fc7482610 
 5. https://jonathan-hui.medium.com/understanding-feature-pyramid-networks-for-object-detection-fpn-45b227b9106c 
