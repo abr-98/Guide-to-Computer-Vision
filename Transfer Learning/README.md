@@ -91,7 +91,7 @@ real_label=val_generator.classes  ##This gets the real labels of the data passed
 
 *For GPU, its better to keep the batch_size bigger*
 
-##### Preprocess input vs Re-scaling
+### Preprocess input vs Re-scaling
 
 Sometimes, there are often some confusions about whether to rescale
 
@@ -118,7 +118,7 @@ If we are using pretrained models and just training the newly added fully connec
 
 *As most of the transfer learning models are bulky, training them may need a lot of data and epochs to train*
 
-##### Training on Gray-scale image
+### Training on Gray-scale image
 
 As "imagenet" dataset is a "RGB" or 3 channel dataset, each image has 3 channels. But the transfer learning are trained on 3-channel inputs. So, in order to train on Gray-scale or 1 channel images, we need to load and save the weights using a dummy model. Then we need to initialize another model without loading the default imagenet weights. Next, we need to load the weights, from the saved weights from the previous demo model, and skip any mismatch.
 
