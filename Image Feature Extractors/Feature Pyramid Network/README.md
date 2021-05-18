@@ -31,17 +31,17 @@ An example shown in the file.
 
 Label: 0 -> cat, 1 -> dog
 
-The file structure:
+The file structure:\
 
-Train---|
-        |- Cat
-        |- Dog
-Validate|
-        |- Cat
-        |- Dog
-Test----|
-        |- Cat
-        |- Dog
+Train---|\
+        |- Cat\
+        |- Dog\
+Validate|\
+        |- Cat\
+        |- Dog\
+Test----|\
+        |- Cat\
+        |- Dog\
 
 The designed network is a feature pyramid network.
 
