@@ -55,7 +55,9 @@ We have a few choices using custom loss functions:
 
 Details can be found at: https://medium.com/swlh/handling-highly-imbalanced-datasets-in-convolutional-neural-networks-b71530d34ed
 
+Focal Traversky Loss is given by (1-Traversky Index)^Gamma. Gamma controls how much we want to increase the magnitude of the error if a misclassification is done. 
 
+More at https://towardsdatascience.com/dealing-with-class-imbalanced-image-datasets-1cbd17de76b5
 
 
 
