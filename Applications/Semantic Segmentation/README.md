@@ -38,6 +38,22 @@ Given by: True positive/(True Positive+False Negative)
 
 In most segmentation problems, there is a huge imbalance between the foreground and the background classes. As foreground is very small with respect to background, the model learns the back ground better and predicts fore grounds as backgrounds which increases the False Negatives. So, the above metrics are used to keep a tab on how the model is learning both the foreground and the back ground classes. Dice coefficient and Jaccard Index are very common as they focus on the foreground only. 
 
+### Loss Functions
+
+Normally, for a segmentation problem, we can use "Binary Crossentropy" or "Categorical Crossentropy" accordingly based on the number of foreground classes. If we have one foreground class, we need to classify between background and the foreground object, we can use binary crossentropy, else, in case of multiple foreground objects we need to use categorical crossentropy, just similar to classification problem. 
+
+But, due to the imbalance problem, using standard crossentropy loss function, prove to have low performance. So, we need to use other weighted loss functions that penalizes more when the model mistakenly classifies a foreground pixel as a background compared to if it wrongly classifies a background pixel.
+
+We have a few choices using custom loss functions:
+
+1. Focal Loss
+2. Weighted Crossentropy
+3. Dice-Coefficient Loss
+4. Jaccard Loss
+5. Traversky Loss
+6. Focal Traversky Loss
+
+Details can be found at: https://medium.com/swlh/handling-highly-imbalanced-datasets-in-convolutional-neural-networks-b71530d34ed
 
 
 
