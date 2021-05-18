@@ -90,3 +90,46 @@ real_label=val_generator.classes  ##This gets the real labels of the data passed
 
 
 *For GPU, its better to keep the batch_size bigger*
+
+##### Preprocess input vs Re-scaling
+
+Sometimes, there are often some confusions about whether to rescale
+
+~~~from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from keras.applications.resnet_v2 import preprocess_input
+train_set=ImageDataGenerator(
+    rescale=1/255,
+    rotation_range=20,
+    zoom_range=0.1,
+    shear_range=0.2
+)
+val_set=ImageDataGenerator(rescale=1/255)
+
+real_label=val_generator.classes  ##This gets the real labels of the data passed.
+~~~
+
+Or use preprocess_input as shown above in the image datagenerator as a preprocessing unit. 
+
+**When we are training a data from the scratch or if we are going to retrain the transfer learning base model completely, we should use scaling (1/255), but if we are using the pretrained weights from the transfer learning models, it is firmly advised to use the preprocess_input function as preprocesing function.**
+
+The scaling (1/255) works like a Min-Max Normalization Transformation. It maps the pixel values that ranges from 0-255 to 0-1. This lets the model work on smaller values and  increases stability of training. If we are using from scratch model or training the whole base model from the scratch, we can adapt the weights as we like, so we can use rescaling, e do not need any particular preprocessing
+
+If we are using pretrained models and just training the newly added fully connected layers, we will need the exact preprocessing for the images as were provided during the model training. So, Preprocess_input function for that particular base model is necessary.
+
+*As most of the transfer learning models are bulky, training them may need a lot of data and epochs to train*
+
+##### Training on Gray-scale image
+
+As "imagenet" dataset is a "RGB" or 3 channel dataset, each image has 3 channels. But the transfer learning are trained on 3-channel inputs. So, in order to train on Gray-scale or 1 channel images, we need to load and save the weights using a dummy model. Then we need to initialize another model without loading the default imagenet weights. Next, we need to load the weights, from the saved weights from the previous demo model, and skip any mismatch.
+
+~~~
+weight_model = ResNet50V2(weights='imagenet', include_top=False)   ##Initializing Resnet50v2 model
+weight_model.save_weights(fldr+'weights.h5')                       ##Saving wieghts
+
+input_tensor=Input(shape=shape)  ## Setting Input Size
+
+base_model = ResNet50V2(weights=None, include_top=False, input_tensor=input_tensor)   ##Initializing new base model
+base_model.load_weights(fldr+'weights.h5',skip_mismatch=True, by_name=True)    ##loading the weights (Transfer Learning)
+~~~
+
+
