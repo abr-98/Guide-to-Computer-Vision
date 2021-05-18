@@ -26,3 +26,24 @@ References:
 3. https://docs.opencv.org/3.4/d4/d1f/tutorial_pyramids.html 
 4. https://towardsdatascience.com/review-fpn-feature-pyramid-network-object-detection-262fc7482610 
 5. https://jonathan-hui.medium.com/understanding-feature-pyramid-networks-for-object-detection-fpn-45b227b9106c 
+
+An example shown in the file.
+
+Label: 0 -> cat, 1 -> dog
+
+The file structure:
+
+Train---|
+        |- Cat
+        |- Dog
+Validate|
+        |- Cat
+        |- Dog
+Test----|
+        |- Cat
+        |- Dog
+
+The designed network is a feature pyramid network.
+
+
+
