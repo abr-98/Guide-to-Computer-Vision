@@ -33,13 +33,13 @@ Label: 0 -> cat, 1 -> dog
 
 The file structure:\
 
-Train---|\
+Train\
         |- Cat\
         |- Dog\
-Validate|\
+Validate\
         |- Cat\
         |- Dog\
-Test----|\
+Test\
         |- Cat\
         |- Dog
 
