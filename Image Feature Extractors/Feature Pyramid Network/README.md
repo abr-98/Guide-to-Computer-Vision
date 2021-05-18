@@ -41,7 +41,7 @@ Validate|\
         |- Dog\
 Test----|\
         |- Cat\
-        |- Dog\
+        |- Dog
 
 The designed network is a feature pyramid network.
 
