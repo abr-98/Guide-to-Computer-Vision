@@ -16,3 +16,19 @@ References:
 
 ### Fast FCN
 
+Fast FCN proposed the replacement of the dilated convolution with **Joint Pyramid Upsampling(JPU).** 
+
+![Arch](https://miro.medium.com/max/700/1*qIjtbbsVYqRwpTs6-7_i8Q.png)
+
+The differences between Fast FCN's backbone and DilatedFCN's lies in the last two convolution stages. Typically, the input feature map is first processed by a regular convolution layer, followed by a series of dilated convolutions. Fast FCN conceptually processes the input feature map with a strided convolution and then employs several regular convolutions to generate the output.  
+
+![JPU](https://miro.medium.com/max/700/0*YrT7w4KaIPPUGsgt.png)
+
+Each feature map is passed through your regular convolutional block. Afterwards, the feature maps are upsampled and concatenated which then is passed through four convolutions with different dilation rates. Finally, the convolution's results are concatenated again and passed through a final convolution layer. JPU extracts multi-scale context information from multi-level feature maps, which leads to a better performance.
+
+References:
+
+1. https://arxiv.org/pdf/1903.11816.pdf
+2. https://flonelin.wordpress.com/2019/11/17/fastfcn/
+3. https://github.com/wuhuikai/FastFCN
+
