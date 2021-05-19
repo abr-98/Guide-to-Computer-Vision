@@ -57,7 +57,9 @@ Details can be found at: https://medium.com/swlh/handling-highly-imbalanced-data
 
 Focal Traversky Loss is given by (1-Traversky Index)^Gamma. Gamma controls how much we want to increase the magnitude of the error if a misclassification is done. 
 
-More at https://towardsdatascience.com/dealing-with-class-imbalanced-image-datasets-1cbd17de76b5
+More at 
+1. https://towardsdatascience.com/dealing-with-class-imbalanced-image-datasets-1cbd17de76b5
+2. https://cnvrg.io/semantic-segmentation/
 
 
 
