@@ -23,7 +23,7 @@ References:
 1. https://arxiv.org/pdf/1611.09326.pdf
 2. https://arxiv.org/pdf/1608.06993.pdf
 3. https://towardsdatascience.com/review-fc-densenet-one-hundred-layer-tiramisu-semantic-segmentation-22ee3be434d5
-
+4. https://towardsdatascience.com/review-densenet-image-classification-b6631a8ef803
 
 
 
