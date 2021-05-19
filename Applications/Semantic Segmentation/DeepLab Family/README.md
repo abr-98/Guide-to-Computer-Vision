@@ -71,3 +71,5 @@ References:
 7. https://towardsdatascience.com/review-deeplabv3-atrous-convolution-semantic-segmentation-6d818bfd1d74
 8. https://towardsdatascience.com/review-deeplabv1-deeplabv2-atrous-convolution-semantic-segmentation-b51c5fbde92d
 9. https://developers.arcgis.com/python/guide/how-deeplabv3-works/
+10. https://github.com/sadeepj/crfasrnn_keras
+11. https://medium.com/@ihor.shylo/improving-performance-of-image-segmentation-with-conditional-random-fields-crf-8b93f7db396c
