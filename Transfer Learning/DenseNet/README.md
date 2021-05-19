@@ -22,7 +22,7 @@ Three blocks of Densenet module is used in the final architecture, with a transi
 
 Reference:
 
-1.https://towardsdatascience.com/review-densenet-image-classification-b6631a8ef803
+1.https://towardsdatascience.com/review-densenet-image-classification-b6631a8ef803 \
 2.https://arxiv.org/pdf/1608.06993.pdf
 
 More at:
