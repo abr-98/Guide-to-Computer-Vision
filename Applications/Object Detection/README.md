@@ -17,7 +17,8 @@ To accomplish this task, we have uncovered several algorithms over the time. Maj
 7. Spatial Pyramid Pooling (SPP-net)
 8. Single Shot Detector (SSD)
 9. You Only Look Once (YOLO)
-10. MobileNet (For embedded and mobile devices)
+10. Retinanet
+11. MobileNet (For embedded and mobile devices)
 
 HOG is one the traditional descripter based method. Others are majorly divided into two classes based on the methodology of the algorithms:
 
