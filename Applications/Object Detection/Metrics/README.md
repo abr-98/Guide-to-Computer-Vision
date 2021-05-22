@@ -28,5 +28,36 @@ False Negative is the condiion, if there is an object and a bounding box but the
 
 True Negative is all the other pixels which doesnot have an object and our model did not predict also, So, it is insignificant in this scenerio.
 
-#### 
+#### Precision and Recall 
+
+Precision depicts how many of the objects detected by the model are actually present in the ground truth.
+
+Given by: TP / (TP + FP)
+
+Recall depicts how many of the objects  actually present in the ground truth are detected by the model. 
+
+Given by: TP / (TP + FN)
+
+#### Precision-Recall Curve
+
+Precision and Recall always has a tradeoff among themselves. The predictive model during a binary classification actually predicts confidence percentages for the object belonging to respective classes. For example, say for an object, a model predicts, 0.55 confidence that the object belongs to class 1 and 0.45 that it belongs to class 0. Here, we consider a threshold *alpha*, normally 0.5. If the confidence score is above threshold, considered as 1 else 0. So, if we lower the value of the threshold, more objects will be predicted as class 1 and False Negative will decrease but, the model will start classifying objects as class 1 with lower confidence, so False Positive will increase and vice versa.
+
+So, if we roll the value of alpha we will generate a Precision-Recall curve, which is often a very good estimator for a model performance, as we need our model to have good presicion, even when we increase the recall. 
+
+#### Average Precision
+
+Average Precision is given by the area under the Precision-Recall curve. We just consider the total area under the curve using an integration. Given by:
+
+![Formula](https://miro.medium.com/max/672/1*bs56Iu0mzjAP-QAM4XAAhw.png)
+
+Now, often, the precsion-recall curve is zig-zag and is not monotonically decreasing, due to the stochastic nature of black-box models, but in order to evaluate the area under the curve, we want to make the curve monotonically decreasing as shown in the image. For this, we can use two methods.
+
+1. All points interpolation
+2. 11 point interpolation.
+
+
+
+
+
+
 
