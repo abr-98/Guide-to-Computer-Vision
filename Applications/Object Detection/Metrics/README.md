@@ -50,10 +50,32 @@ Average Precision is given by the area under the Precision-Recall curve. We just
 
 ![Formula](https://miro.medium.com/max/672/1*bs56Iu0mzjAP-QAM4XAAhw.png)
 
+
 Now, often, the precsion-recall curve is zig-zag and is not monotonically decreasing, due to the stochastic nature of black-box models, but in order to evaluate the area under the curve, we want to make the curve monotonically decreasing as shown in the image. For this, we can use two methods.
+
+![zz](https://miro.medium.com/max/443/1*7oGMy1fbcWw_jQttX0MNdw.png)
 
 1. All points interpolation
 2. 11 point interpolation.
+
+Normally, we use the 11 point interpolation, In this point, we pick 11 equally spaced recall values, namely, 0.0, 0.1,.....1.0. We consider the precision against these points. If suddenly precision drops, we consider the maximum of the values on the right hand, to keep the curve monotonically non-increasing. We just take the Average of the precision of the 11 corresponding recall values.
+
+![11](https://miro.medium.com/max/463/1*4lx2r2HUx0wRbQOjWMcAZA.png)
+
+#### Mean Average Precision
+
+Often, we do not detect only one type of object using one model. We detect multiple objects. For every object we get an Average Precision, the Mean Average Precision (mAP) is the mean of AP for all the objects. For models, which detect only one object, mAP=AP.
+
+#### Variations of mAP:
+
+Several Papers used several version of mAP. Some use 0.5 mAP with 0.5 as threshold for IOU. Similarly, some use 0.75 mAP, others 0.95 mAP. Others have also used Large mAP, i.e, the performance is measured based only on larger objects. Similarly, we have samll mAP.
+
+References:
+
+1. https://github.com/rafaelpadilla/Object-Detection-Metrics
+2. https://blog.zenggyu.com/en/post/2018-12-16/an-introduction-to-evaluation-metrics-for-object-detection/
+
+
 
 
 
