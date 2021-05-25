@@ -49,9 +49,11 @@ So, finally we flatten the anchor boxes as a 256-d 1D vector and send to the den
 
 It is a strategy which are used in most of such algorithms, in order to balance the number of positive and negative samples. When initially we obtain a lot of anchor boxes, its very easy to get the Positive samples, using the overlap with the original bounding boxes. But, for the negative samples, we have a huge number of anchor boxes, which if all are considered will cause a huge imbalance. To solve this we do not consider the boxes, which cover absolutely dark backgrounds or have 0 overlap with the actual boxes. We consider such boxes, which cover interesting points with some variations in the feature maps but actually are not object, to make our model more robust.
 
+References:
 
-
-
+1. https://www.geeksforgeeks.org/faster-r-cnn-ml/
+2. https://medium.com/@nabil.madali/demystifying-region-proposal-network-rpn-faa5a8fb8fce
+3. https://towardsdatascience.com/faster-r-cnn-for-object-detection-a-technical-summary-474c5b857b46
 
 
 
