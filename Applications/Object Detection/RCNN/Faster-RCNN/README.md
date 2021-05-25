@@ -20,4 +20,5 @@ References:
 
 1. https://arxiv.org/pdf/1506.01497.pdf
 2. https://towardsdatascience.com/faster-r-cnn-for-object-detection-a-technical-summary-474c5b857b46
+3. https://tryolabs.com/blog/2018/01/18/faster-r-cnn-down-the-rabbit-hole-of-modern-object-detection/
 
