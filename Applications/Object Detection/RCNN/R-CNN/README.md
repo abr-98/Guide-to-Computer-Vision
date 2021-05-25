@@ -33,7 +33,7 @@ The bounding box coordinates are predicted by an regression model. So, its train
 
 The first equation shows how the predicted and the ground truth box are predicted. (px,py) give the coordinates to the center of the box and (pw,ph) give width and hieght. The equation 2 and 3 show the transformations between the Ground truth to prediction and vice versa transformations.
 
-Fourth equation is the actual regression loss functtion, which is a MSE or least square error, with a regularization term (L2) to prevent the weights w from attaining very large velue and overfit. The importance factor *lambda* is selected using cross-validation. For the ground truth, in case of regression, we consider boxes with IOU overlap >= 0.6.
+Fourth equation is the actual regression loss functtion, which is a MSE or least square error, with a regularization term (L1) to prevent the weights w from attaining very large velue and overfit. The importance factor *lambda* is selected using cross-validation. For the ground truth, in case of regression, we consider boxes with IOU overlap >= 0.6.
 
 
 References:
