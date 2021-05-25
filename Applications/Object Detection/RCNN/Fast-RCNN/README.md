@@ -44,6 +44,7 @@ References:
 1. https://arxiv.org/pdf/1504.08083.pdf
 2. https://towardsdatascience.com/fast-r-cnn-for-object-detection-a-technical-summary-a0ff94faa022
 3. https://medium.datadriveninvestor.com/review-on-fast-rcnn-202c9eadd23b
+4. https://deepsense.ai/region-of-interest-pooling-explained/
 
 
 
