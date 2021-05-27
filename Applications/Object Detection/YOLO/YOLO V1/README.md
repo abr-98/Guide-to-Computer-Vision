@@ -28,6 +28,39 @@ So, the output shape of YOLOv1 algorithm is: S x S x (B x 5 + C). where S is the
 
 ![Arch](https://miro.medium.com/max/3840/1*9ER4GVUtQGVA2Y0skC9OQQ.png)
 
+The YOLO v1 architecture has 24 convolutional layered architecture: 20 layers of pretrained network followed by 4 more convolutional layers, further followed by 2 fully connected layers. One with 4096 nodes and the last one with 7x7x30 nodes which gives an output of (7, 7, 30) as we want. The architecure is inspired by GoogleNet's architecture and has 1x1 reduction layers to reduce dimensions along with 3x3 convolutions.  The last layer predicts the outputs as linear Regression, as we do not use a softmax or sigmoid function. 
+
+#### Loss function
+
+Similar to the RCNN family, the YOLO algorithm also uses a multipart multitask loss. It uses sum of squared errors SSE for each part and scale them using scaling or weightage variables to maintain the importance of the term in the loss function.
+
+![loss](https://miro.medium.com/max/2400/1*aW6htqx4Q7APLrSQg2eWDw.png)
+
+Now, as we can see our loss function actually has total 5 parts which actually derived from three main losses:
+
+1. The localization loss: It is the loss obtained as the sum of squared differences between the predicted bounding box and the actual bounding box.
+
+Given by:
+
+![loc_loss](https://miro.medium.com/max/700/1*BwhGMvffFfqtND9413oiwA.png)
+
+The *lambda coord* controls the weight of localization error in the loss function. Now, as YOLO predicts bounding boxes for small as well as large objects the error is taken as the squared difference between the square root of the width and hieght instead of the actual values of width and hieght of the bounding boxes. The first part of the error gives the SSE between the center points of the bounding boxes. The *lambda coord* is kept at a default value of 5.
+
+2. Confidence loss: It focuses on the confidence of the model about the objectness of the bounding box, or what is the probability of the box really containing an object. We consider an weighted sum of errors for the boxes containing the objects and the boxes not containing the objects.
+
+For the box containing the objects, the error is given by:
+
+![contain](https://miro.medium.com/max/700/1*QT7mwEbyLJYIxTYtOWClFQ.png)
+
+If the box does not really contain the objects, the error is given by:
+
+![not_contain](https://miro.medium.com/max/700/1*Yc_OJIXOoV2WaGQ6PqhTXA.png)
+
+A weight parameter is used the boxes, that does not have the objects, and kept a value of 0.5. This is kept as most of the boxes do not have any objects, it creates a huge imbalance, in classes. So, we use a weighted to loass function to give lower importance to the over represeneted class. 
+
+
+
+
 
 
 
