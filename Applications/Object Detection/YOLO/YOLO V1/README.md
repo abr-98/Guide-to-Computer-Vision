@@ -28,7 +28,7 @@ So, the output shape of YOLOv1 algorithm is: S x S x (B x 5 + C). where S is the
 
 ![Arch](https://miro.medium.com/max/3840/1*9ER4GVUtQGVA2Y0skC9OQQ.png)
 
-The YOLO v1 architecture has 24 convolutional layered architecture: 20 layers of pretrained network followed by 4 more convolutional layers, further followed by 2 fully connected layers. One with 4096 nodes and the last one with 7x7x30 nodes which gives an output of (7, 7, 30) as we want. The architecure is inspired by GoogleNet's architecture and has 1x1 reduction layers to reduce dimensions along with 3x3 convolutions.  The last layer predicts the outputs as linear Regression, as we do not use a softmax or sigmoid function. 
+The YOLO v1 architecture has 24 convolutional layered architecture: 20 layers of pretrained network followed by 4 more convolutional layers, further followed by 2 fully connected layers. One with 4096 nodes and the last one with 7x7x30 nodes which gives an output of (7, 7, 30) as we want. The architecure is inspired by GoogleNet's architecture and has 1x1 reduction layers to reduce dimensions along with 3x3 convolutions.  The last layer predicts the outputs as linear Regression, as we do not use a softmax or sigmoid function. The CNN networks outputs the feature maps of dimension 7 x 7 x 1024. which is falttened and sent to fully connected layers.
 
 #### Loss function
 
@@ -57,6 +57,34 @@ If the box does not really contain the objects, the error is given by:
 ![not_contain](https://miro.medium.com/max/700/1*Yc_OJIXOoV2WaGQ6PqhTXA.png)
 
 A weight parameter is used the boxes, that does not have the objects, and kept a value of 0.5. This is kept as most of the boxes do not have any objects, it creates a huge imbalance, in classes. So, we use a weighted to loass function to give lower importance to the over represeneted class. 
+
+3. Classification loss: If an object is detected, the classification loss at each cell is the squared error of the class conditional probabilities for each class.
+
+![class](https://miro.medium.com/max/700/1*lF6SCAVj5jMwLxs39SCogw.png)
+
+#### Training and Evaluation
+
+For training the, confidence value c for each bounding box is taken as the IoU value of the actual bounding box and the predicted bounding box. So, we obtain a score of 0 for bounding box which has no object, and a score of 1 for the boxes, which completely overlap with the actual boxes.
+
+The Evaluation is done using a metrics called the **class confidence score** given by: 
+
+class confidence score = box confidence score x conditional class probability.
+
+It measures both the classification and the localization of the object.
+
+Defn:
+
+![defn](https://miro.medium.com/max/700/1*0IPktA65WxOBfP_ULQWcmw.png)
+
+The algo also uses a concept of Non-Max Supression to obtain the best bounding box for an object, if it is detected by multiple bounding boxes. It selects the bounding box with the highest confidence value, rejecting the others. If other bounding boxes has a IOU >0.5 with the best selected box, the boxes are removed.
+
+Reference:
+
+1. https://arxiv.org/pdf/1506.02640.pdf
+2. https://towardsdatascience.com/yolov1-you-only-look-once-object-detection-e1f3ffec8a89
+
+
+
 
 
 
