@@ -18,7 +18,7 @@ The model gave an accuracy of 91.2% on the imagenet classification dataset which
 
 4. The YOLO v2 removed one of the pooling layers to give better resolution. It was found that the performance is better if the feature maps are of odd spatial size. So, for that reason the input size was shifted from 448 x 448 to 416 x 416. The authors removed 1 pooling layer, so we got a higher resolution feature map of size 13 x 13 instead of 7 x 7. The feature map was down-sampled by a factor of 32.
 
-5. The authors removed the last 2 fully connected layers as was present in the YOLOv1 architecture. This made the network capable of training on any size of the data.
+5. The authors removed the last 2 fully connected layers as was present in the YOLOv1 architecture. This made the network capable of training on any size of the image. Only the size needed to be a multiple of 32, as the image is downsampled by a factor of 32. So, during training the authors used a variety of size from \[320,352,608].  So, for training, after 10 batches the size of the images are resized randomly using one of the given sizes. This give a sense of data augmentation while training and also helps the model to train on multi-scale or resolution of data. 
 
 
 
