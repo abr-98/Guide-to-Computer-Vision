@@ -12,6 +12,10 @@ The network predicts 4 coordinates for each bounding box, tx, ty, tw, th. If the
 
 ![bounding](https://miro.medium.com/max/235/1*L2mpfhg2tixnWJqMSyoEEQ.png)
 
+where,
+
+![box](https://miro.medium.com/max/402/1*K5_cJ0wy_7uOxXvrm-4rQw.png)
+
 #### Change in modelling
 
 YOLO struggles to detect small objects as due to the downsampled feature maps, the finer details are missed. YOLO v3 improves the small object detections using short cut connections, which helps to allow obtain finer features. YOLO v3 predicts at three levels instead of YOLO V2's single level prediction. So, YOLO v3 adapts and functions like a feature pyramid network, and uses different sized feature maps for prediction. 
@@ -23,6 +27,7 @@ YOLO v3 predicts from the last feature maps. Then, it goes back 2 layers back an
 The YOLO-v3 introduces  DarkNet-53 replacing Darknet-19 as the feature extractor. It consists of 3x3 convolutions followed by 1x1 filters for dimensionality reductions. Skip connections like the residual networks has been introduced in Darknet-53 as an additional change.
 
 ![Model](https://miro.medium.com/max/334/1*biRYJyCSv-UTbTQTa4Afqg.png)
+
 
 The above image gives the model.
 
