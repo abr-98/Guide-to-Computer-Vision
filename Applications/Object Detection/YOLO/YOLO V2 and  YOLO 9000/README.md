@@ -39,6 +39,8 @@ Consequently, the output dimension also changed. For each anchor box, we had 1 c
 
 The number of anchor-boxes is set to 5, using a clustering method. Using the clustering, we identify the top-K boundary boxes that have the best coverage for the training data, we run K-means clustering on the training data to locate the centroids of the top-K clusters.
 
+![Cluster](https://miro.medium.com/max/700/1*l5wvrPjLlFp6Whgy0MqbKQ.png)
+
 YOLOv2 also brought a major change in the structure of the network, in order to obtain fine grain features. The 13x13 feature map can be used to detect large objects but no finer features can be detected, so no smaller objects detected. To solve this, the authors, picked up 26x26x512 feature maps from the previous layers in the backbone, then reshapesd it to (13,13,2048) and contatenated with the final downsampled feature map of (13,13,1024), and obtained a map of (13,13,3072), then predicted on that map.
 
 ![fine_graib](https://miro.medium.com/max/700/1*RuW-SCIML8SHc5_PrIE9-g.jpeg)
