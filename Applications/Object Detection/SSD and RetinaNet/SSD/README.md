@@ -51,7 +51,7 @@ Lloc is the localization loss which is the smooth L1 loss between the predicted 
 
 The Confidence loss for the class prediction is given by:
 
-[Conf](https://miro.medium.com/max/770/1*flNOlxfJj0Pyt1lNZmQaLA.png)
+![Conf](https://miro.medium.com/max/770/1*flNOlxfJj0Pyt1lNZmQaLA.png)
 
 Lconf is the confidence loss which is the softmax loss over multiple classes confidences (c).
 
