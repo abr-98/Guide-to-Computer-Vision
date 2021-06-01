@@ -37,7 +37,6 @@ References:
 ROI Align:
 1. https://towardsdatascience.com/understanding-region-of-interest-part-2-roi-align-and-roi-warp-f795196fc193
 2. https://towardsdatascience.com/understanding-region-of-interest-part-1-roi-pooling-e4f5dd65bb44
-3. 
 
 
 
