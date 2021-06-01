@@ -30,6 +30,7 @@ where d is the distance metrics, a is the reference, p is the positive example a
 References:
 
 1. https://arxiv.org/pdf/1911.07702.pdf
+2. https://towardsdatascience.com/one-shot-learning-with-siamese-networks-using-keras-17f34e75bb3d
 
 Application:
 
