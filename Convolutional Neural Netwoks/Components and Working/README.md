@@ -66,6 +66,10 @@ These layers are artificial neural network nodes, which learn from the obtained 
 
 Activation layers are the units of non-linearity in the convolutional networks, which stack up to create polynomial functions to help the network learn complex functions. Most used Activation functions is "Relu" for CNNs.
 
+### 8. Back propagation in CNN:
+
+1. https://medium.com/@pavisj/convolutions-and-backpropagations-46026a8f5d2c
+2. https://towardsdatascience.com/backpropagation-in-a-convolutional-layer-24c8d64d8509
 
 References:
 
