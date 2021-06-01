@@ -26,7 +26,7 @@ The Loss function used is again an extension of the loss function used in faster
 
 ![loss](https://images1.programmersought.com/60/12/12c7259bbd34305df9f55905957b7174.png)
 
-The Loss Lcls and Lbox is same as faster-RCNN. Lmask is responsible for training the masks. For K classes, M\*M size feature map is taken. Sigmoid activation function is used in the last layer of the network, for predictions, and an average binary cross-entropy is used as loss function. The binary cross-entropy is calculated for all the K classes seperately and then their average is taken. If the class label is the i-th class during training, then only the loss of the i-th mask output is calculated as Lmask, and the other K-1 mask outputs contribute 0 to Lmask.
+The Loss Lcls and Lbox is same as faster-RCNN. Lmask is responsible for training the masks. For K classes, M\*M size feature map is taken, and we obtain pixel wise predictions, so total K\*M\*M predictions for k classes. Sigmoid activation function is used in the last layer of the network, for predictions, and an average binary cross-entropy is used as loss function. The binary cross-entropy is calculated for all the K classes seperately and then their average is taken. If the class label is the i-th class during training, then only the loss of the i-th mask output is calculated as Lmask, and the other K-1 mask outputs contribute 0 to Lmask.
 
 References:
 
