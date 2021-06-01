@@ -1,1 +1,1 @@
-
+There are several networks apart from the main stream network models, which have been developed to acknowledge specific challenges in the field of computer vision and attain specific tasks. We talk about such models in this section.
