@@ -12,3 +12,6 @@ The repository aims to provide a full step by step guide to the field of compute
 #### Feel free to fork this repository and pull requests.
 #### Please comment on code, if present
 #### Each portion of computer vision has a dedicated folder: Each folder has a README.
+
+
+Please Visit: https://medium.com/@myac.abhijit/a-beginners-guide-to-computer-vision-3a8aea9304cd
