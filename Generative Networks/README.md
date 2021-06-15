@@ -2,8 +2,8 @@
 
 Codes: 
 
-1.https://github.com/abr-98/GAN-Models
-2.https://github.com/eriklindernoren/Keras-GAN
+1. https://github.com/abr-98/GAN-Models
+2. https://github.com/eriklindernoren/Keras-GAN
 
 Papers: 
 
